@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Django Enterprise Maintenance Suite"
+version = "1.0.0"
+description = "Enterprise-grade maintenance mode management for Django"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+  { name = "TS Tamarai Selvan", email = "tamaraiselvan.official@gmail.com" }
+]
+requires-python = ">=3.9"
+dependencies = [
+  "Django>=4.2"
+]
+keywords = ["django", "maintenance", "read-only", "enterprise", "middleware"]
+
+classifiers = [
+  "Framework :: Django",
+  "Framework :: Django :: 4.2",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/tamaraiselvan/Django-Enterprise-Maintenance-Suite"
+Source = "https://github.com/tamaraiselvan/Django-Enterprise-Maintenance-Suite"
+Issues = "https://github.com/tamaraiselvan/Django-Enterprise-Maintenance-Suite/issues"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]

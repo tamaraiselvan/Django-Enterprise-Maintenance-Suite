@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maintenance Mode</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; text-align: center; padding: 50px; color: #333; }
+        .container { max-width: 600px; margin: 0 auto; }
+        h1 { font-size: 2.5rem; color: #d9534f; }
+        p { font-size: 1.2rem; line-height: 1.5; }
+        .meta { color: #666; font-size: 0.9rem; margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚧 We'll be back soon!</h1>
+        <p>
+            {{ reason|default:"We are performing scheduled maintenance to improve our services." }}
+        </p>
+        {% if end_time %}
+        <div class="meta">
+            Expected completion: <strong>{{ end_time|date:"DATETIME_FORMAT" }}</strong>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
