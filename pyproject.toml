@@ -3,7 +3,7 @@ requires = ["setuptools>=65", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "Django Enterprise Maintenance Suite"
+name = "enterprise_maintenance_suit"
 version = "1.0.0"
 description = "Enterprise-grade maintenance mode management for Django"
 readme = "README.md"
