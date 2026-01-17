@@ -4,7 +4,7 @@ from django.http import JsonResponse, HttpResponse
 from django.shortcuts import render
 from django.template import TemplateDoesNotExist
 from django.db import transaction
-from .models import MaintenanceState
+from django_enterprise_maintenance_suite.models import MaintenanceState
 
 class MaintenanceMiddleware:
     def __init__(self, get_response):

@@ -1,5 +1,5 @@
 include README.md
 include LICENSE
-recursive-include src/enterprise_maintenance_suit/templates *
-recursive-include src/enterprise_maintenance_suit/migrations *
-recursive-include src/enterprise_maintenance_suit/management *
+recursive-include src/django_enterprise_maintenance_suite/templates *
+recursive-include src/django_enterprise_maintenance_suite/migrations *
+recursive-include src/django_enterprise_maintenance_suite/management *

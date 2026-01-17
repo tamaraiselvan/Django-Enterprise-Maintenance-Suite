@@ -1,8 +1,8 @@
 from django.contrib import admin, messages
 from django.core.exceptions import ValidationError
 from django.db.models.deletion import ProtectedError
-from enterprise_maintenance_suit.models import MaintenanceState, MaintenanceAuditLog, MaintenanceIgnoreURL
-from enterprise_maintenance_suit.services.maintenance import MaintenanceService, InvalidTransitionError 
+from django_enterprise_maintenance_suite.models import MaintenanceState, MaintenanceAuditLog, MaintenanceIgnoreURL
+from django_enterprise_maintenance_suite.services.maintenance import MaintenanceService, InvalidTransitionError 
 
 # Helper to create logs
 def create_audit_log(user, action, window_obj, changes=None, ip=None):

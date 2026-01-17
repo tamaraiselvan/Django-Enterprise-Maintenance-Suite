@@ -3,9 +3,9 @@ requires = ["setuptools>=65", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "enterprise_maintenance_suit"
-version = "1.0.0"
-description = "Enterprise-grade maintenance mode management for Django"
+name = "django_enterprise_maintenance_suite"
+version = "1.0.1"
+description = "Enterprise Grade Maintenance Mode Management for Django Applications"
 readme = "README.md"
 license = { file = "LICENSE" }
 authors = [
@@ -15,7 +15,7 @@ requires-python = ">=3.9"
 dependencies = [
   "Django>=4.2"
 ]
-keywords = ["django", "maintenance", "read-only", "enterprise", "middleware"]
+keywords = ["django", "maintenance", "read-only", "enterprise", "applciations", "middleware"]
 
 classifiers = [
   "Framework :: Django",

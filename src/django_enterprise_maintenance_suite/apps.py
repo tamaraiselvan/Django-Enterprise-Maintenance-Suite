@@ -1,8 +1,8 @@
 from django.apps import AppConfig
 
 class EnterpriseMaintenanceSuitConfig(AppConfig):
-    name = "enterprise_maintenance_suit"
+    name = "django_enterprise_maintenance_suite"
     verbose_name = "Enterprise Maintenance Suite"
 
     def ready(self):
-        import enterprise_maintenance_suit.signals
+        import django_enterprise_maintenance_suite.signals

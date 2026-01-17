@@ -18,3 +18,7 @@ All notable changes to this project will be documented in this file.
 - Django management command for maintenance inspection
 - Default customizable 503 maintenance template
 
+## [1.0.1] - 2026-01-17
+
+### Added
+- Changes for settings up PYPI Release Package and change in the project name

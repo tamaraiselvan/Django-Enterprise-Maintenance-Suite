@@ -1,8 +1,8 @@
 from django.db import transaction
 from django.utils import timezone
-from enterprise_maintenance_suit.models import MaintenanceState
-from enterprise_maintenance_suit.services.exceptions import InvalidTransitionError
-from enterprise_maintenance_suit.services.audit import log_action
+from django_enterprise_maintenance_suite.models import MaintenanceState
+from django_enterprise_maintenance_suite.services.exceptions import InvalidTransitionError
+from django_enterprise_maintenance_suite.services.audit import log_action
 
 class MaintenanceService:
     """

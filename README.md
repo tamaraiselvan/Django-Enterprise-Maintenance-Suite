@@ -1,3 +1,5 @@
+[![Latest on Django Packages](https://img.shields.io/badge/PyPI-django-enterprise-maintenance-suite/tags-8c3c26.svg)](https://djangopackages.org/packages/p/django-enterprise-maintenance-suite/)
+                        
 # Django Enterprise Maintenance Suite
 
 Enterprise Maintenance Suite is a **Django reusable application** that provides
@@ -32,7 +34,7 @@ any existing Django project.
 ### 1. Install Package from PyPI
 
 ```python
-pip install enterprise-maintenance-suite
+pip install django_enterprise_maintenance_suite
 ```
 
 ### 2. Add to INSTALLED_APPS
@@ -40,7 +42,7 @@ pip install enterprise-maintenance-suite
 ```python
 INSTALLED_APPS = [
     ...
-    "enterprise_maintenance_suit",
+    "django_enterprise_maintenance_suite",
     ...
 ]
 ```
@@ -51,7 +53,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     ...
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'enterprise_maintenance_suit.middleware.MaintenanceMiddleware',
+    'django_enterprise_maintenance_suite.middleware.MaintenanceMiddleware',
 ]
 
 ```
@@ -78,7 +80,7 @@ from django.urls import path, include
 
 urlpatterns = [
     ...
-    path("maintenance/", include("enterprise_maintenance_suit.urls")),
+    path("maintenance/", include("django_enterprise_maintenance_suite.urls")),
 ]
 
 ```

@@ -3,10 +3,9 @@ from django.core.management.base import BaseCommand
 from django.core.management import CommandError
 from django.utils import timezone
 from django.contrib.auth import get_user_model
-
-from enterprise_maintenance_suit.models import MaintenanceState
-from enterprise_maintenance_suit.services.maintenance import MaintenanceService
-from enterprise_maintenance_suit.services.exceptions import InvalidTransitionError
+from django_enterprise_maintenance_suite.models import MaintenanceState
+from django_enterprise_maintenance_suite.services.maintenance import MaintenanceService
+from django_enterprise_maintenance_suite.services.exceptions import InvalidTransitionError
 
 User = get_user_model()
 

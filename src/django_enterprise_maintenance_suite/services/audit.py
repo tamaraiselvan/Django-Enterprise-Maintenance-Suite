@@ -1,4 +1,4 @@
-from enterprise_maintenance_suit.models import MaintenanceAuditLog
+from django_enterprise_maintenance_suite.models import MaintenanceAuditLog
 
 def log_action(
     *,

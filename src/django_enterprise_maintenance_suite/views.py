@@ -2,7 +2,7 @@ from django.http import JsonResponse
 from django.utils import timezone
 from django.views.decorators.cache import cache_control
 from django.views.decorators.http import require_GET
-from .models import MaintenanceState
+from django_enterprise_maintenance_suite.models import MaintenanceState
 
 @require_GET
 @cache_control(max_age=60, public=True)

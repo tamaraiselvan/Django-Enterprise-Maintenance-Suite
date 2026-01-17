@@ -3,7 +3,7 @@ from django.conf import settings
 from django.urls import reverse, NoReverseMatch
 from django.core.cache import cache
 from django.utils import timezone
-from .models import MaintenanceState, MAINTENANCE_CACHE_KEY
+from django_enterprise_maintenance_suite.models import MaintenanceState, MAINTENANCE_CACHE_KEY
 
 class DefaultMaintenanceBackend:
     def __init__(self):
